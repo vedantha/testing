@@ -9,14 +9,16 @@
   <script type="text/javascript" src="./map.js"></script>
 </head>
 <body>
-  <h1>hello</h1>
+  <div id="topbar">Content</div>
   <div id="overlay">
     <form method="post" action="#">
-      <label>Username</label>
+      <ul>
+      <li><label>Username</label></li>
       <input type="text">
-      <label>Password</label>
+      <li><label>Password</label></li>
       <input type="password">
-      <input type="submit" value="submit">
+      <br><br>
+      <li><input type="submit" value="submit"></li><ul>
     </form>
   </div>
   <div id="googleMap"></div>

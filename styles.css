@@ -4,7 +4,19 @@ position: absolute;
 top: 0px;
 left: 0px;
 }
-#overlay{width: 500px; height: 200px; z-index: 200;position: absolute;
-top: 20%;
-left: 30%;
-background-color: rgba(0,0,0,0.5);}
+#overlay{width: 500px; 
+	height: 200px; 
+	z-index: 200;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 5px;
+	color: white;
+	font-family: Helvetica, Ubuntu, sans-serif;
+	font-weight: 900;
+	padding-top: 50px;
+	padding-left: 50px;
+	box-shadow: 5px 5px 100px #215F8B;
+	line-height: 25px;
+}
