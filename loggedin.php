@@ -1,11 +1,14 @@
 <?php include('./includes/header.php');?>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('img').click(function(){
+			$('button').click(function(){
 
 			});
 		});
 	</script>
+	<div id="panel">
+      <input id="target" type="text" placeholder="Search Box" size="50">
+    </div>
 	<div id="googleMap"></div>
 	<div id="topbar">
 	    <img src="./Capture.JPG">
@@ -19,7 +22,8 @@
 		<label>Description</label><br>
 		<input type="text" style="height:200px;width:95%;border-radius:5px;" name="description">
 		<label>Latitude Longitude</label><br>
-		<input id="latlng" type="input" ><br>
+		<input id="latlng" type="input" name="latlng"><br>
+		<button>Add more coordinates</button><br>
 		<input type="submit" value="Submit">
 		</form>
 	</div>

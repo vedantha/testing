@@ -2,7 +2,7 @@ body,html{height: 100%; width: 100%;font-family: Helvetica, Ubuntu, sans-serif;}
 #googleMap{ height: 100%; width: 100%; z-index: 100;
 position: absolute;
 top: 0px;
-left: 0px;
+right: 0px;
 }
 #overlay{width: 500px; 
 	height: 200px; 
@@ -53,4 +53,15 @@ left: 0px;
 	color: white;
 	font-weight: 900;
 	line-height: 30px;
+}
+#panel{
+	position: absolute;
+	top: 100px;
+	left: 70%;
+	z-index: 200;
+	width: auto;
+	height: auto;
+	background-color: white;
+	padding: 5px 5px;
+	border-radius: 5px;
 }
