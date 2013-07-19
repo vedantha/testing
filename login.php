@@ -1,5 +1,4 @@
-<?php  mysql_connect("localhost", "root", "")or die("cannot connect"); 
-  	   mysql_select_db("testing")or die("cannot select DB");
+<?php  require_once('./includes/dbconn.php');
 
        	$username1 = trim($_POST['username']);
        	$password1 = trim($_POST['password']);
