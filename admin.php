@@ -2,14 +2,6 @@
 <?php include('./map-admin.js.php');?>
 </head>
 <body>
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('button').click(function(){
-
-			});
-		});
-	</script>
 	<div id="panel">
       <input id="target" type="text" placeholder="Search for a place here" size="50">
     </div>

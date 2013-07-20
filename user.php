@@ -4,9 +4,6 @@
 <body>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('button').click(function(){
-
-			});
 		});
 	</script>
 	<div id="panel">
@@ -19,6 +16,10 @@
 	</div>
 
 	<div id="leftbar">
-		
+		<form><ul>
+			<p>Click on the map and add</p>
+		</ul>
+		<input type="submit" value="Submit">
+		</form>
 	</div>
 <?php include('./includes/footer.php');?>
