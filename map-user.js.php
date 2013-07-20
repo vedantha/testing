@@ -22,8 +22,8 @@ google.maps.event.addListener(map, 'click', function(event) {
         position : position1,
         map:map
       });
-      $('ul').append("<li>"+content+"<input type='text' placeholder='Enter Note'></li><br>");
-      });
+      $('ul').append("<input type='text' value='"+content+"'class='field'><br><input type='text' placeholder='Enter Note' class='field'></li><br>");
+      }); 
 }
 		
 google.maps.event.addDomListener(window, 'load', initialize);

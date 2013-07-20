@@ -4,6 +4,25 @@
 <body>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			
+			$('#submit').click(function(){
+                                 
+    var answers = [];
+    $.each($('.field'), function() {
+        answers.push($(this).val());
+    });
+     
+    if(answers.length == 0) {
+        answers = "none";
+    }  
+ 
+    alert(answers);
+     
+    return false;
+                                 
+    });
+     
+
 		});
 	</script>
 	<div id="panel">
@@ -16,10 +35,10 @@
 	</div>
 
 	<div id="leftbar">
-		<form><ul>
+		<ul>
 			<p>Click on the map and add</p>
 		</ul>
-		<input type="submit" value="Submit">
-		</form>
+		<input type="submit" value="Submit" id="submit">
+		
 	</div>
 <?php include('./includes/footer.php');?>

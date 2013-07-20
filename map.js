@@ -1,7 +1,8 @@
 function initialize() {
   var map = new google.maps.Map(document.getElementById('googleMap'), {
     zoom : 7,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    disableDefaultUI: true
   });
   var defaultBounds = new google.maps.LatLngBounds(
       new google.maps.LatLng(-33.8902, 151.1759),

@@ -1,6 +1,6 @@
 <?php 
 	require_once('./includes/dbconn.php');
-	$projectname = $_POST['projectname'];
+	$ = $_POST['projectname'];
 	$description = $_POST['description'];
 	$latlng = $_POST['latlng'];
 
