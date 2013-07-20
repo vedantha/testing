@@ -1,4 +1,7 @@
 <?php include('./includes/header.php');?>
+<script type="text/javascript"><?php include('./map-original.js');?></script>  
+</head>
+<body>
   <div id="topbar">
     <a href="#">Login</a>
   </div>

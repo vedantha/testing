@@ -5,16 +5,22 @@
        	$username = hash('sha512',$username1);
        	$password = hash('sha512',$password1);
       	$sql="SELECT * FROM users WHERE username='$username' and password='$password'";
-    	$result=mysql_query($sql);
-    	echo($result);
-       
-    	$count=mysql_num_rows($result);
+    	  $result=mysql_query($sql);
+    	  $row=mysql_fetch_assoc($result);
+        $count=mysql_num_rows($result);
     	
-        if($count==1){
+        if(($count==1)&&($row["admin"]==1)){
             session_start();
             $_SESSION['username'] = "1";
-            header("location:loggedin.php");
+           header("location:admin.php");
                       }
+        elseif (($count==1)&&($row["admin"]==0)) {
+          # code...
+          session_start();
+          $_SESSION['username'] = "1";
+          header("location:user.php");
+        }
+
         else {
         echo "Wrong Username or Password";
         }
